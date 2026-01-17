@@ -1,0 +1,45 @@
+<html>
+    <style>
+        #parent{
+        height:400px;
+width:300px;
+margin:50px auto;
+transition: 3s;
+            border-radius: 21px;
+            box-shadow: rgba(36, 137, 231, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+        #child1{
+            height:50%;
+            width:100%;
+        }
+        #child2{
+           height:45%;
+           width:50%
+        }
+        img{
+            height:100%;
+            width:100%;
+        }
+        #child2 img{
+            border-radius: 50%;
+            position: relative;
+            top: -100px;
+            left: 80px;
+           }
+           #parent:hover{
+            transform: scale(1.2);
+           }
+    </style>
+
+    <head>
+        <body>
+            <div id="parent">
+                <div id="child1">
+                    <img src="https://images.unsplash.com/photo-1767194316686-e3ebed20c54a?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
+                    </div>
+                    <div id="child2">
+                        <img src="https://plus.unsplash.com/premium_photo-1765465308206-6d92231b7b71?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
+            </div>
+        </body>
+    </head>
+</html>
