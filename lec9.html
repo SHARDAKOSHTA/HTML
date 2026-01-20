@@ -1,0 +1,83 @@
+<!-- <html>
+    <style>
+        div{
+            height:300px;
+            width:300px;
+            background-color:  aqua;
+            border:2px solid black;
+            animation-name: shree;
+            animation-duration: 3s;
+            /* animation: infinite; */
+            /* animation-delay:2s; */
+            /* animation-iteration-count: 2; */
+            /* animation-play-state: paused; */
+            animation-direction: alternate;
+        }
+    
+        @keyframes shree{
+            0%{
+                height:400px;
+                width:400px;
+                border-radius: 50%;
+                background-color: blueviolet;
+            }
+            25%{
+                height:100vh;
+                width:50vw;
+                background-color: blue;
+            }
+            50%{
+                height:700px;
+                width:700px;
+                background-color: chartreuse;
+            }
+            100%{
+                height:100vh;
+                width:50vw;
+                border-radius: 50%;
+                background-color: coral;
+            }
+        }
+    </style>
+    <head>
+        <body>
+            <div>
+            </div>
+        </body>
+    </head>
+</html> -->
+
+
+<html>
+    <style>
+        div{
+            height:100px;
+            width:100px;
+            border-radius: 100px;
+            border: 5px solid black;
+            background: linear-gradient(orange,white,green);
+            margin: auto;
+            animation-name: any;
+            animation-duration: 900ms;
+animation-timing-function: ease-in;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+        }
+        @keyframes any{
+        0%{
+          transform: translatey(0px);
+        }
+
+        100%{
+        transform: translateY(90vh) rotate(100deg);
+
+        }
+        }
+
+    </style>
+    <head>
+        <body>
+            <div></div>
+        </body>
+    </head>
+</html>
