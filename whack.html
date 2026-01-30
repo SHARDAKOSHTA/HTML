@@ -1,0 +1,111 @@
+<html>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+            font-family: Arial,  sans-serif;
+        }
+        body{
+            background: #f2f2f2;;
+        }
+.cards{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 60px;
+}
+.box{
+    height:380px;
+    width:280px;
+    border:2px solid black;
+    background: white;
+    border-radius: 20px;
+    box-shadow:  0 6px 15px black;
+text-align: center;
+position: relative;
+padding:20px;
+}
+.box p{
+    justify-content: baseline;
+    position: absolute;
+      margin: 5px auto;
+}
+.box a{
+   justify-content: end;
+   right:15px;
+   position: absolute;
+   margin: 5px auto;
+ 
+}
+.box h4{
+    margin: 10px auto;
+}
+
+ .parent{
+            height:55px;
+            width:55px;
+            margin:  auto;
+            display: grid;
+            grid-template-columns: 60px 60px 60px;
+grid-template-rows: 60px 60px 60px;
+gap: 10px;
+justify-content: center;
+padding:40px;
+        }
+        .child{
+
+ box-shadow:  0 6px 6px black;
+            border: 1px solid black;
+            overflow: hidden;
+        }
+        .child:hover {
+    transform: scale(1.1);
+    background-color: green;
+       }
+
+.game{
+    padding:6px 15px;
+    bottom:5px;
+  position: absolute;
+    border:none;
+    background: green;
+color:white;
+border-radius:15px;
+font-size:12px;
+left:50%;
+transform: translateX(-50%);
+}
+ 
+
+    </style>
+    <head>
+        <body>
+          
+            <div class="cards">
+            <div class="box">
+               <h2>⬛ whack-a-Box</h2> 
+               <h4>click </h4>
+               <p>score:2</p>
+               <a>Time:0s</a>
+               
+                <div class="parent">
+                    <div class="child" id="one"></div>
+                    <div class="child" id="two"></div>
+                    <div class="child" id="three"></div>
+                    <div class="child" id="four"></div>
+                    <div class="child" id="five"></div>
+                    <div class="child" id="six"></div>
+                    <div class="child" id="seven"></div>
+                    <div class="child" id="eight"></div>
+                    <div class="child" id="nine"></div>
+                    <button class="game">start game</button>
+               </div>
+               
+       </div>        
+               
+</div>
+
+        </body>
+    </head>
+</html>
