@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alignment</title>
+   
+    <style>
+        *{
+box-sizing: border-box;
+        }
+        body{
+            font-family: 'Ubuntu',sans-serif;
+        }
+.container{
+width: 900px;
+border: 3px solid purple;
+margin: auto;
+background-color: rgb(235, 164, 219);
+}
+.item{
+border: 2px solid grey;
+margin:12px 3px ;
+padding:12px 3px;
+background: pink;
+}
+#fruits{
+float: left;
+width:48%;
+}
+#stationary{
+    /* float: left; */
+width:100%;
+clear: both;
+}
+#computer{
+    float: left;
+width:48%;
+}
+ p,h3{
+    text-align: right;
+    text-align: left;
+    text-align: center;
+    text-align: justify;
+}
+    </style>
+</head>
+<body>
+<div class="container">
+    
+    <h1>welcome to my store</h1>
+    <div id="fruits" class="item">
+        <h3>Fruits</h3>
+        <p id="fruitspara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus ad eum enim quasi! Alias fuga excepturi perferendis voluptate rerum eius, suscipit iste rem error dolor optio magni eos veritatis illum vitae odio accusamus.</p>
+    </div>
+    <div id="computer" class="item">
+        <h3>Computers</h3>
+        <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus error quisquam eligendi recusandae, praesentium numquam, ea minima necessitatibus libero mollitia totam eaque aliquid natus accusamus. Maiores sunt tempora quidem doloremque. Atque libero possimus esse!</p>
+    </div>
+    <div id="stationary" class="item">
+        <h3>stationary</h3>
+        <p id="stapara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore fuga, corporis praesentium delectus, temporibus harum similique velit, soluta dolorum nemo sit ratione consectetur magnam maxime vitae inventore id numquam repellendus non aliquid culpa optio!</p>
+    </div>
+    <div id="stationary" class="item">
+        <h3>stationary</h3>
+        <p id="stapara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore fuga, corporis praesentium delectus, temporibus harum similique velit, soluta dolorum nemo sit ratione consectetur magnam maxime vitae inventore id numquam repellendus non aliquid culpa optio!</p>
+    </div>
+</div>
+</body>
+</html>
