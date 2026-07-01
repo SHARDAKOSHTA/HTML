@@ -1,0 +1,224 @@
+<html>
+    <style>
+        body{
+            height:100vh;
+            width:100vw;
+            background-color:skyblue;
+            position: relative;
+        }
+#sun{
+            height:100px;
+            width:100px;
+            border-radius: 100px;
+            border: 2px solid brown;
+            background:linear-gradient(rgb(255, 0, 0),orange);
+            position: absolute;
+           justify-content: end;
+            transition: 5s;
+            right: 50px;
+            animation-name: sunmove;
+            animation-duration: 5s;
+           animation-timing-function: ease-in;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+           
+        }
+        @keyframes sunmove{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg)  ;
+            }
+        }
+        h2{
+            font-size: 40px;
+           text-align: center;
+            color: brown;
+
+        }
+        #one::after{
+            content:"";
+            position: absolute;
+            bottom:-70px;
+            left:50%;
+            transform: translateX(-50%);
+            width:3px;
+            height:70px;
+            background: #555;
+            border-radius: 2px;
+            transition: 5s;
+        }
+        .b1{
+            height:120PX;
+            width: 90px;
+            background-color: brown;
+            position: absolute;
+            left:5%;
+            border-radius: 50%;
+        animation-name: b1;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        }
+        @keyframes b1{
+            0%{
+                transform: translateY(600px);
+            }
+            100%{
+                transform: translateY(-100vh);
+            }
+        }
+
+        .b1{
+            height:120PX;
+            width: 90px;
+            background-color: brown;
+            position: absolute;
+            left:5%;
+            border-radius: 50%;
+        animation-name: b1;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        }
+        @keyframes b1{
+            0%{
+                transform: translateY(600px);
+            }
+            100%{
+                transform: translateY(-100vh);
+            }
+        }
+    
+        .b1{
+            height:120PX;
+            width: 90px;
+            background-color: brown;
+            position: relative;
+            left:5%;
+            border-radius: 50%;
+        animation-name: b1;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        }
+        @keyframes b1{
+            0%{
+                transform: translateY(600px);
+            }
+            100%{
+                transform: translateY(-100vh);
+            }
+        }
+
+        .b2{
+            height:120PX;
+            width: 90px;
+            background-color: blue;
+            position: relative;
+            left:20%;
+            border-radius: 50%;
+        animation-name: b2;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        }
+        @keyframes b2{
+            0%{
+                transform: translateY(600px);
+            }
+            100%{
+                transform: translateY(-50vh);
+            }
+        }
+
+        .b3{
+            height:120PX;
+            width: 90px;
+            background-color: red;
+            position: relative;
+            left:45%;
+            border-radius: 50%;
+        animation-name: b3;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        }
+        @keyframes b3{
+            0%{
+                transform: translateY(600px);
+            }
+            100%{
+                transform: translateY(-100vh);
+            }
+        }
+
+        .b4{
+            height:120PX;
+            width: 90px;
+            background-color: violet;
+            position: relative;
+            left:65%;
+            border-radius: 50%;
+        animation-name: b4;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        }
+        @keyframes b4{
+            0%{
+                transform: translateY(600px);
+            }
+            100%{
+                transform: translateY(-100vh);
+            }
+        }
+
+        .b5{
+            height:120PX;
+            width: 90px;
+            background-color: indigo;
+            position: relative;
+            left:80%;
+            border-radius: 50%;
+        animation-name: b5;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        }
+        @keyframes b5{
+            0%{
+                transform: translateY(600px);
+            }
+            100%{
+                transform: translateY(-100vh);
+            }
+        }
+        #background{
+            height:100px;
+            width:100vw;
+            background-color: green;
+            position: absolute;
+            top:520px;
+        }
+        
+    
+    </style>
+    <head>
+        <body>
+            <h2>🥳Welcome To Ballon Festival🎈</h2>
+            <div id="sun"></div>
+            <div id="Ballon">
+                <div id="one"  class="b1"></div>
+                <div id="one" class="b2"></div>
+                <div id="one"  class="b3"></div>
+                <div id="one" class="b4"></div>
+                <div id="one" class="b5"></div>
+              
+            </div>
+ <div id="background"></div>
+            
+        </body>
+    </head>
+</html>

@@ -1,0 +1,46 @@
+<html>
+    <style>
+#parent{
+    height:400px;
+    width:80vw;
+    background-color: aliceblue;
+    border:2px solid red;
+}
+#parent:hover .one{
+    margin-left:980px ;
+}
+.one{
+    height:100px;
+    width:100px;
+    border-radius: 50%;
+    transition: 10s;
+}
+#one{
+    background-color: brown;
+  /* transition-timing-function: linear; */
+}
+#two{
+    background-color: indigo;
+  /* transition-timing-function: step-end; */
+}
+#three{
+    background-color: cadetblue;
+      /* transition-timing-function: ease-out; */
+   
+}
+#four{
+    background-color: orchid;
+     /* transition-timing-function: ease-in-out; */
+}
+    </style>
+    <head>
+        <body>
+            <div id="parent" >
+            <div id="one" class="one"></div>
+            <div id="two" class="one"></div>
+            <div id="three" class="one"></div>
+            <div id="four" class="one"></div>
+            </div>
+        </body>
+    </head>
+</html>

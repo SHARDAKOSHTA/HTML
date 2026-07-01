@@ -1,0 +1,128 @@
+<html>
+ <head>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+            font-family: Arial,  sans-serif;
+        }
+        body{
+            background: #f2f2f2;;
+        }
+.cards{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 60px;
+}
+.box{
+    height:380px;
+    width:280px;
+    border:2px solid black;
+    background: white;
+    border-radius: 20px;
+    box-shadow:  0 6px 15px black;
+text-align: center;
+position: relative;
+padding:20px;
+}
+.circle{
+    height:90px;
+    width:90px;
+     border-radius: 50%;
+background:black;
+color:white;
+display: flex;
+margin: 40px auto 15px;
+justify-content: center;
+align-items: center;
+font-size: 36px;
+font-weight: bold;
+}
+.box h2{
+    margin: 8px 0;
+}
+.box h4{
+    color: gray;
+    margin-bottom: 10px;
+}
+.box p{
+    padding:10px;
+    font-size: 14px;
+    margin-bottom:20px;
+    border:2px dotted black;
+}
+.profile{
+    padding:10px 20px;
+    border:none;
+    background-color: black;
+color:white;
+border-radius: 20px;
+cursor: pointer;
+}
+.online{
+    padding:6px 14px;
+    top:15px;
+    right:15px;
+    position: absolute;
+    border:none;
+    background: green;
+color:white;
+border-radius:15px;
+font-size:12px;
+}
+.offline{
+    background: red;
+    color:white;
+    top:15px;
+    right:15px;
+    position: absolute;
+    border-radius: 15px;
+    padding:6px 14px;
+    font-size:12px ;
+}
+
+
+    </style>
+    </head>
+    
+        <body>
+            <div class="cards">
+            <div class="box">
+             <button class="online">ONLINE</button>
+            <div class="circle">R </div>
+               <h2 >Rahul</h2> 
+               <h4>Web Developer</h4>
+               <p>Builds modern websites using HTML & CSS.</p>
+               <button class="profile">View profile</button>
+</div>
+
+
+
+<div class="box">
+             <button class="offline">OFFLINE</button>
+            <div class="circle">N</div>
+               <h2 >Neha</h2> 
+               <h4>UI Designer</h4>
+               <p>Designs clean and user-friendly interfaces.</p>
+               <button  class="profile">View profile</button>
+</div>
+
+
+<div class="box">
+             <button class="online">ONLINE</button>
+            <div class="circle">A</div>
+               <h2>Aman</h2> 
+               <h4>Backend Developer</h4>
+               <p>Works with server logic and databases.</p>
+               <button class="profile">View profile</button>
+</div>
+</div>
+
+
+        </body>
+
+</html>
+
+
