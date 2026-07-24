@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on selectors</title>
+</head>
+<style>
+        h1{
+            background-color: yellow;
+            color: black;
+            text-align: center;
+            font-weight: bold;
+        }
+        /* div p{
+            color: blue;
+            font-weight: bold;
+            background-color: aqua;
+        } */
+
+
+    
+         /* div li p{
+         if p is contained by any li which is contained by div.
+            color: blue;
+            font-weight: bold;
+            background-color: aqua;
+        } */
+
+
+           /* div > p{
+           if p is right inside div then tnis css will be applied.
+            color: blue;
+            font-weight: bold;
+            background-color: aqua;
+        }
+
+        div +p{
+        if p is after div ie p is the next sibling of div. 
+            color: aliceblue;
+            background-color: rgb(247, 139, 139);
+        } */
+    </style>
+<body>
+    <h1>THIS IS  MORE NO SELECTORS</h1>
+<div class="container">
+    <div class="row">
+        <ul>
+            <li class="item"><p>This is another paragraph.</p></li>
+           <li>This will not get affected</li>
+           <p>this is a paragraph inside ul</p>
+        </ul>
+        <p> This is a paragraph. </p>
+    </div>
+    <p>This is another paragraph.</p>
+</div>
+<p>This is outer most paragraph.</p>
+</body>
+</html>
