@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best online Food Services in India | onlineMeals.com</title>
+    <!-- <link rel="stylesheet" href="project2.css">  -->
+
+<style>
+
+
+    *{
+  margin:0;
+  padding:0;
+}
+:root{
+  --navbar-height:59px;
+  
+}
+
+.navbar{
+  display:flex;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+
+}
+.logo{
+margin: 34px 45px;
+}
+
+.logo img{
+height: 50px;
+}
+.navbar ul{
+    display: flex;
+}
+.navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+ top: 0px;
+ left: 0px;
+    height: 100%;
+    width: 100%;
+z-index: -1;
+opacity: 0.4;
+}
+.navbar li{
+    /* color: aliceblue; */
+    list-style: none;
+    font-size: 1.3rem;
+}
+.navbar ul li a{
+color: black;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover{
+color: white;
+    background-color: black;
+    
+}
+
+/* Home section */
+
+#home{
+display: flex;
+flex-direction: column;
+padding: 3px 200px;
+justify-content: center;
+align-items: center;
+height: 648px;
+
+}
+
+#home::before{
+  content: "";
+    background: url(https://media.istockphoto.com/id/2244873776/photo/arab-woman-enjoying-brunch-breakfast-croissant-sandwich-with-friends-at-a-restaurant.jpg?s=612x612&w=0&k=20&c=mRhyGXWYN1nzZn5S9AFK5nZOxRwUIPY5E7z90vHllBQ=) no-repeat center center/cover;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    height: 600px;
+    width: 100%;
+z-index: -1;
+opacity: 0.89;
+}
+#home h1{
+    color: black;
+    text-align: center;
+}
+/* utility classes */
+ .h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+
+ }
+ .h-sec{
+    font-size: 2.3rem;
+    padding: 12px;
+  font-family: 'Baloo Bhai',cursive;
+ }
+.btn{
+    padding: 6px 20px;
+    background-color: brown;
+    color: aliceblue;
+   
+   font-size: 1.2rem;
+    margin: 17px ;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#home p{
+    font-size: 1.5rem;
+     font-family: 'Baloo Bhai',cursive;
+}
+.center{
+    text-align: center;
+}
+
+/* service section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+border: 2px solid brown;
+ border-radius: 28px;
+ margin: 5px 5px;
+background: #f2f2f2;
+padding: 34px;
+}
+#services .box img{
+    height: 200px;
+   margin: auto;
+   display: block;
+  
+}
+#services .box p{
+  font-family: 'Baloo Bhai',cursive;
+}
+
+
+/* clients section */
+
+#client-section{
+height: 344px;
+}
+#client-section::before{
+content: "";
+position: absolute;
+background: url('https://images.unsplash.com/photo-1601034914195-10e61b27b603?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDMwNnx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+
+/* https://plus.unsplash.com/premium_photo-1676473229054-9d4abed0e1b7?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHBpbmslMjBmb29kJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D */
+width: 100%;
+height: 290px;
+z-index: -1;
+opacity: 0.4;
+}
+.h-primary-centre{
+    text-align: center;
+     font-family: 'Baloo Bhai',cursive;
+}
+#clients{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.client-item{
+    padding: 40px;
+}
+#clients img{
+    height: 124px;
+}
+
+
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('https://images.unsplash.com/photo-1615840287214-7ff58936c4cf?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')  no-repeat center center/cover;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 134px;
+}
+#contact-box form{
+    width: 40%;
+
+}
+#contact-box label{
+    font-size: 1.3rem;
+     font-family: 'Baloo Bhai',cursive;
+}
+.h-contact{
+    text-align: center;
+     font-family: 'Baloo Bhai',cursive;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+</style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="https://media.istockphoto.com/id/1493950506/photo/3d-delivery-scooter-and-green-food-box-with-burger-or-hamburger-pin-flag-isolated-on-pink.jpg?s=612x612&w=0&k=20&c=YZ9iTKGZH83i4UYBfmfSJo-YZmid_RASW7Ug4dWgd98=">
+        </div>
+        <ul>
+<li class="item"><a href="#">Home</a></li>
+<li class="item"><a href="#">services</a></li>
+<li class="item"><a href="#">About Us</a></li>
+<li class="item"><a href="#">Contact Us</a></li>
+
+        </ul>
+    </nav>
+   <section id="home">
+    <h1 class="h-primary">Welcome To My OnlineMeal</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur veritatis ipsa odit optio quasi voluptates odio corporis? Cum, debitis necessitatibus non consequatur repellat veritatis repudiandae error. Magni culpa, voluptatum eius vitae cum expedita. Est?
+    </p>
+    <button class="btn">Order Now</button>
+   </section>
+
+   <section class="services">
+    <h1 class="h-pri center">
+Our services
+    </h1>
+    <div id="services">
+        <div class="box">
+            <img src="https://plus.unsplash.com/premium_photo-1733259709671-9dbf22bf02cc?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGl6emF8ZW58MHx8MHx8fDA%3D" alt="">
+            <h2 class="h-sec center">Food catering</h2>
+            <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, facilis aspernatur nobis quo magni tempora, ex eos aperiam est facere fugiat dolorem fuga! Distinctio id tenetur laborum nostrum nulla quam quo eos! Cupiditate, aliquam?</p>
+        </div>
+         <div class="box">
+            <img src="https://plus.unsplash.com/premium_vector-1683121553553-9480a65e50bd?w=352&dpr=1&h=367&auto=format&fit=crop&q=60&ixlib=rb-4.1.0">
+            <h2 class="h-sec center">Food ordering</h2>
+            <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, facilis aspernatur nobis quo magni tempora, ex eos aperiam est facere fugiat dolorem fuga! Distinctio id tenetur laborum nostrum nulla quam quo eos! Cupiditate, aliquam?</p>
+        </div>
+         <div class="box">
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D">
+            <h2 class="h-sec center">Bulk Ordering</h2>
+            <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, facilis aspernatur nobis quo magni tempora, ex eos aperiam est facere fugiat dolorem fuga! Distinctio id tenetur laborum nostrum nulla quam quo eos! Cupiditate, aliquam?</p>
+        </div>
+    </div>
+
+   </section>
+   <section id="client-section">
+    <h1 class="h-primary-centre">Our clients</h1>
+    <div id="clients">
+        <!-- <div class="client-item">
+            <img src="https://images.unsplash.com/photo-1621768216002-5ac171876625?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YXBwbGUlMjBsb2dvfGVufDB8fDB8fHww" alt="Our Clients">
+        </div>
+       <div class="client-item">
+            <img src="https://images.unsplash.com/photo-1621768216002-5ac171876625?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YXBwbGUlMjBsb2dvfGVufDB8fDB8fHww" alt="Our Clients">
+        </div>
+           <div class="client-item">
+            <img src="https://images.unsplash.com/photo-1621768216002-5ac171876625?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YXBwbGUlMjBsb2dvfGVufDB8fDB8fHww" alt="Our Clients">
+        </div>
+         <div class="client-item">
+            <img src="https://images.unsplash.com/photo-1621768216002-5ac171876625?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YXBwbGUlMjBsb2dvfGVufDB8fDB8fHww" alt="Our Clients">
+        </div> -->
+         
+    </div>
+   </section>
+   
+   <section id="contact">
+    <h1 class="h-contact">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-grouop">
+                    <label for="name">Name : </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name" >
+                </div>
+                  <div class="form-grouop">
+                    <label for="name">E-mail : </label>
+                    <input type="email" name="name" id="name" placeholder="Enter your E-mail" >
+                </div>
+                  <div class="form-grouop">
+                    <label for="name">Phone no. : </label>
+                    <input type="phone" name="name" id="name" placeholder="Enter your contact no." >
+                </div>
+                  <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            </form>
+        </div>
+   
+   </section>
+   <footer>
+    <div class="center">
+        Copyright &copy; www.myonlineMeal.com. All rights reserved|
+    </div>
+   </footer>
+</body>
+</html>
