@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid + Media Quesries</title>
+</head>
+
+<style>
+
+    .container{
+        display: grid;
+        grid-gap: 1rem;
+
+        grid-template-areas: 
+        'navbar navbar navbar navbar'
+        'section section section aside'
+        'footer footer footer footer'
+        ;
+    }
+
+    @media only screen and (max-width:300px){
+        body{
+            background-color: red;
+        }
+         .container{
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer'
+            ;
+        }
+         span{
+        display: block;
+        text-align: center;
+     }
+    }
+
+    @media only screen and (min-width:300px) and (max-width:500px){
+        body{
+            background-color: blue;
+        }
+         .container{
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer'
+            ;
+        }
+        aside{
+            display: none;
+        }
+         span{
+        display: block;
+        text-align: center;
+     }
+    }
+
+    @media (min-width:500px) and (max-width:800px){
+        body{
+            background-color: yellow;
+        }
+
+        .container{
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer'
+            ;
+        }
+     span{
+        display: block;
+        text-align: center;
+     }
+    }
+
+    @media (min-width:801px){
+        body{
+            background-color: green;
+        }
+    }
+
+    .bdr{
+        border: 2px solid black;
+        padding: 10px 23px;
+        background-color: wheat;
+    }
+
+    nav{
+        grid-area: navbar;
+    }
+
+    section{
+        grid-area: section;
+    }
+
+    aside{
+        grid-area: aside;
+    }
+
+    footer{
+        grid-area: footer;
+        text-align: center;
+    }
+
+</style>
+
+<body>
+
+    <div class="container">
+
+        <nav class="bdr">
+            <span>Home</span>
+            <span>About</span>
+            <span>Services</span>
+            <span>Contact</span>
+        </nav>
+
+        <section class="bdr">
+            <h2>Learn CSS in Hindi. </h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam deleniti consequuntur exercitationem nemo temporibus architecto dolorum tempore eum repellat doloribus similique nulla deserunt fuga mollitia, non tempora praesentium eius consectetur molestias modi soluta laudantium . Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus distinctio suscipit quidem atque consequatur soluta aliquam maiores iure in odio eos corrupti eius, enim velit eum, animi doloribus illo earum. Nisi praesentium, laboriosam, est pariatur optio odit eaque sit labore repudiandae quaerat suscipit autem cumque id eius recusandae. Dicta, illo at ipsa aperiam sint debitis ab tempora ad, accusantium magnam mollitia quaerat sit repudiandae sequi nobis voluptatibus consectetur provident quidem facilis asperiores quo molestias excepturi. Quidem autem fugit aliquid dolore excepturi repellendus voluptatem omnis impedit quaerat culpa nam nesciunt expedita, odio, ab reiciendis dicta. Autem corporis quas iure inventore qui.</p>
+        </section>
+
+        <aside class="bdr">
+            <h1>More About Us</h1>
+        </aside>
+
+        <footer class="bdr">
+            Copywright CodewithHarry 2026
+        </footer>
+
+    </div>
+
+</body>
+</html>
